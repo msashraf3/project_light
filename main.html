@@ -6,26 +6,401 @@
     <title>League Standing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="main js.js"></script>
   </head>
   <body class="container-fluid" style="background-image: linear-gradient(to right, #8d0f0f, #f84462);">
 
-    <!-- Page heading -->
-    <h2 class="text-white mt-4">LEAGUE STANDING - 5<sup>TH</sup> OVER</h2>
+    <div class="container-fluid mt-4 align-items-center">
+        <div class="row">
+          <div class="col">
+           <!-- Page heading -->
+            <h2 class="text-white">LEAGUE STANDING - 5<sup>TH</sup> OVER</h2>
+          </div>
+          <div class="col">
+            <!-- buttons -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary btn-lg me-md-2" type="button">Button</button>
+            <button class="btn btn-outline-danger btn-sm" type="button"><a href=""><img src="icons/back.png" alt="Go back"></a></button>
+        </div>
+          </div>
+        </div>
+      
+ 
+    
+
+
+
+      
+      
+      
 
     <!-- main data -->
-    <div class="mt-3">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="p-3 border bg-light border border-0 rounded-3">Custom column padding</div>
+    <div class="m-3">
+        <div class="row g-5">
+
+            <!-- first card -->
+            <div class="col-lg-6 col-sm-12">
+                <div class="p-3 border bg-light border border-0 rounded-4" style="background-image: linear-gradient(to right, #110b64, #403b92);">
+                    <div class="container-fluid text-center" >
+                        <div class="row align-items-center">
+                            <div class="col-1">
+                                <img src="images/upload.jpg" alt="logo" class="w-100">
+                              </div>
+                              <div class="col">
+                                <h4 class="text-white">MAN OF THE MATCH(OVERALL LEAGUE STANDING)</h4>
+                              </div>
+                              <div class="col-1">
+                                <img src="images/upload.jpg" alt="logo" class="w-100">
+                              </div>
+                        </div>
+
+                        <!-- data table -->
+                        <div class="table-responsive border border-0 rounded-bottom-3 mt-3">
+                            <table class="table table-warning table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">STANDING</th>
+                                <th scope="col">PLAYER</th>
+                                <th scope="col">TEAM</th>
+                                <th scope="col">PERFORMANCE SCORE</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 0%">0%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                      </div>
+                </div>
+              </div>
+
+              <!-- second card -->
+          <div class="col-lg-6 col-sm-12">
+            <div class="p-3 border bg-light border border-0 rounded-4"style="background-image: linear-gradient(to right, #0f8d35, #b9f844);">
+                <div class="container text-center" >
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <img src="images/upload.jpg" alt="logo" class="w-100">
+                          </div>
+                          <div class="col">
+                            <h4 class="text-white">LEADING BATSMAN (TOTAL VOLUME)</h4>
+                          </div>
+                          <div class="col-1">
+                            <img src="images/upload.jpg" alt="logo" class="w-100">
+                          </div>
+                    </div>
+
+                    <!-- data table -->
+                    <div class="table-responsive border border-0 rounded-bottom-3 mt-3">
+                        <table class="table table-secondary table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">STANDING</th>
+                            <th scope="col">PLAYER</th>
+                            <th scope="col">TEAM</th>
+                            <th scope="col">PERFORMANCE SCORE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 0%">0%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="p-3 border bg-light border border-0 rounded-3">Custom column padding</div>
+
+          <!-- Third card -->
+          <div class="col-lg-6 col-sm-12">
+            <div class="p-3 border bg-light border border-0 rounded-4"style="background-image: linear-gradient(to right, #0f8d35, #b9f844);">
+                <div class="container text-center" >
+                    <div class="row align-items-center">
+                      <div class="col-1">
+                        <img src="images/upload.jpg" alt="logo" class="w-100">
+                      </div>
+                      <div class="col">
+                        <h4 class="text-white">LEADING CAPTAIN (NEW CHANNELS VOLUME)</h4>
+                      </div>
+                      <div class="col-1">
+                        <img src="images/upload.jpg" alt="logo" class="w-100">
+                      </div>
+                    </div>
+
+                    <!-- data table -->
+                    <div class="table-responsive border border-0 rounded-bottom-3 mt-3">
+                        <table class="table table-secondary table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">STANDING</th>
+                            <th scope="col">PLAYER</th>
+                            <th scope="col">TEAM</th>
+                            <th scope="col">PERFORMANCE SCORE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 0%">0%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                              </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="p-3 border bg-light border border-0 rounded-3">Custom column padding</div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border bg-light border border-0 rounded-3">Custom column padding</div>
+
+          <!-- fourth card -->
+          <div class="col-lg-6 col-sm-12">
+            <div class="p-3 border bg-light border border-0 rounded-4"style="background-image: linear-gradient(to right, #0f8d35, #b9f844);">
+                <div class="container text-center" >
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <img src="images/upload.jpg" alt="logo" class="w-100">
+                          </div>
+                          <div class="col">
+                            <h4 class="text-white">HIGHEST SIXERS (NEW PRODUCT VOLUME)</h4>
+                          </div>
+                          <div class="col-1">
+                            <img src="images/upload.jpg" alt="logo" class="w-100">
+                          </div>
+
+                          <!-- data table -->
+                          <div class="table-responsive border border-0 rounded-bottom-3 mt-3">
+                            <table class="table table-secondary table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">STANDING</th>
+                                <th scope="col">PLAYER</th>
+                                <th scope="col">TEAM</th>
+                                <th scope="col">PERFORMANCE SCORE</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 0%">0%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                                  </div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
