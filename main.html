@@ -18,10 +18,24 @@
           </div>
           <div class="col-lg-6 col-sm-12">
             <!-- buttons -->
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <button class="btn btn-primary btn-lg me-md-2" type="button">Button</button>
-            <button class="btn btn-outline-danger btn-sm" type="button"><a href=""><img src="icons/back.png" alt="Go back"></a></button>
-        </div>
+            <button class="btn btn-outline-danger btn-sm" type="button"><a href="index.html"><img src="icons/back.png" alt="Go back"></a></button>
+        </div> -->
+        <div class="container">
+            <div class="row justify-content-center justify-content-md-end">
+              <div class="col-md-6">
+                <div id="buttons">
+                  <button id="screenshot-btn" onclick="takeScreenshot()" class="btn btn-secondary">Screenshot Button</button>
+                  <button id="normal-btn" onclick="hideButtons()" class="btn btn-outline-danger"><a href="index.html"><img src="icons/back.png" alt=""></a></button>
+                </div>
+                <div id="screenshot-div"></div>
+                <a id="download-link" href="" download="screenshot.png" style="display:none;">Download Screenshot</a>
+              </div>
+            </div>
+          </div>
+          
+          
           </div>
         </div>
       

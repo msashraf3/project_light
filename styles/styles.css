@@ -5,4 +5,19 @@
 }
 font-family: 'Tinos', serif;
 
+.container {
+    margin-top: 50px;
+  }
+  
+  #screenshot-div {
+    display: none;
+  }
+  
+  #download-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  
   
