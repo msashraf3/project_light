@@ -36,4 +36,14 @@ function takeScreenshot() {
     // Hide the buttons
     document.getElementById("buttons").style.display = "none";
   }
+
+  
+      $(document).ready(function() {
+        var progressBarWidth = $('#progress-bar').width();
+        var logoWidth = $('#logo-container').width();
+        
+        var positionLeft = progressBarWidth - logoWidth;
+        
+        $('#logo-container').css('left', positionLeft + 'px');
+      });
   
