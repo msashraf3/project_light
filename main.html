@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="shortcut icon" href="icons/person.png" type="image/x-icon">
+    
   </head>
   <body class="container-fluid" style="background-image: linear-gradient(to right, #8d0f0f, #f84462);">
 
@@ -30,22 +31,22 @@ leagueStanding.addEventListener("click", () => {
 
           <div class="col-lg-6 col-sm-12">
             <!-- buttons -->
-        <div class="container">
-            <div class="row justify-content-center justify-content-md-end">
-              <div class="col-md-6">
-                <div id="buttons">
-                  <button id="screenshot-btn" onclick="takeScreenshot()" class="btn btn-secondary">Capture</button>
-                  <button id="normal-btn" onclick="hideButtons()" class="btn btn-outline-danger"><a href="index.html"><img src="icons/back.png" alt=""></a></button>
+            <div class="container">
+              <div class="row justify-content-center justify-content-md-end">
+                <div class="col-md-6">
+                  <div id="buttons">
+                    <button id="screenshot-btn" onclick="takeScreenshot()" class="btn btn-secondary">Capture</button>
+                    <button id="normal-btn" onclick="hideButtons()" class="btn btn-outline-danger"><a href="index.html"><img src="icons/back.png" alt=""></a></button>
+                  </div>
+                  <div id="screenshot-div"></div>
+                  <a id="download-link" href="" download="screenshot.png" style="display:none;">Download Screenshot</a>
                 </div>
-                <div id="screenshot-div"></div>
-                <a id="download-link" href="" download="screenshot.png" style="display:none;">Download Screenshot</a>
               </div>
             </div>
+             <script src="main js.js"></script>
+            
+            </div>
           </div>
-           <script src="main js.js"></script>
-          
-          </div>
-        </div>
 
 
     <!-- main data -->
@@ -102,102 +103,102 @@ leagueStanding.addEventListener("click", () => {
                             <td>
                               <div class="position-relative">
                                 <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                  <div id="progress-bar" class="progress-bar bg-danger" style="width: 25%; position: relative;">75%
+                                    
+                                  </div>
+                                  <div id="logo-container" class="position-absolute">
+                                    <img id="logo" src="icons/cricket.png" alt="Logo" style="height: 25px; width: 25px;">
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                              <script>
+                                $(document).ready(function() {
+                                  var progressBarWidth = $('#progress-bar').width();
+                                  var logoWidth = $('#logo-container').width();
+                            
+                                  var positionLeft = progressBarWidth - logoWidth + 3;
+                            
+                                  $('#logo-container').css('left', positionLeft + 'px');
+                            
+                                  $(window).resize(function() {
+                                    progressBarWidth = $('#progress-bar').width();
+                                    positionLeft = progressBarWidth - logoWidth + 3;
+                            
+                                    $('#logo-container').css('left', positionLeft + 'px');
+                                  });
+                                });
+                              </script>
+                            </td>
+
+
+
+                              <td class="text-start"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td><div class="text-center">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-3">
+                                 <img src="icons/soccer-player.png" alt="">
+                                </div>
+                                <div class="col-6">
+                                  Mark
+                                </div>
+                              </div>
+                              </div></td>
+                            <td>Otto</td>
+                            <td>
+                              <div class="position-relative">
+                                <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                  <div id="progress-bar" class="progress-bar bg-danger" style="width: 50%; position: relative;">75%
+                                    
+                                  </div>
+                                  <div id="logo-container" class="position-absolute">
+                                    <img id="logo" src="icons/cricket.png" alt="Logo" style="height: 25px; width: 25px;">
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                              <script>
+                                $(document).ready(function() {
+                                  var progressBarWidth = $('#progress-bar').width();
+                                  var logoWidth = $('#logo-container').width();
+                            
+                                  var positionLeft = progressBarWidth - logoWidth + 3;
+                            
+                                  $('#logo-container').css('left', positionLeft + 'px');
+                            
+                                  $(window).resize(function() {
+                                    progressBarWidth = $('#progress-bar').width();
+                                    positionLeft = progressBarWidth - logoWidth + 3;
+                            
+                                    $('#logo-container').css('left', positionLeft + 'px');
+                                  });
+                                });
+                              </script>
+                            </td>
+                              <td class="text-start"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td><div class="text-center">
+                              <div class="row g-0 align-items-center">
+                                <div class="col-3">
+                                 <img src="icons/soccer-player.png" alt="">
+                                </div>
+                                <div class="col-6">
+                                  Mark
+                                </div>
+                              </div>
+                              </div></td>
+                            <td>Otto</td>
+                            <td>
+                              <div class="position-relative">
+                                <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                   <div id="progress-bar" class="progress-bar bg-danger" style="width: 69%; position: relative;">75%
-                                    
-                                  </div>
-                                  <div id="logo-container" class="position-absolute">
-                                    <img id="logo" src="icons/cricket.png" alt="Logo" style="height: 25px; width: 25px;">
-                                  </div>
-                                </div>
-                              </div>
-                            
-                              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                              <script>
-                                $(document).ready(function() {
-                                  var progressBarWidth = $('#progress-bar').width();
-                                  var logoWidth = $('#logo-container').width();
-                            
-                                  var positionLeft = progressBarWidth - logoWidth + 3;
-                            
-                                  $('#logo-container').css('left', positionLeft + 'px');
-                            
-                                  $(window).resize(function() {
-                                    progressBarWidth = $('#progress-bar').width();
-                                    positionLeft = progressBarWidth - logoWidth + 3;
-                            
-                                    $('#logo-container').css('left', positionLeft + 'px');
-                                  });
-                                });
-                              </script>
-                            </td>
-
-
-
-                              <td class="text-start"></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td><div class="text-center">
-                              <div class="row g-0 align-items-center">
-                                <div class="col-3">
-                                 <img src="icons/soccer-player.png" alt="">
-                                </div>
-                                <div class="col-6">
-                                  Mark
-                                </div>
-                              </div>
-                              </div></td>
-                            <td>Otto</td>
-                            <td>
-                              <div class="position-relative">
-                                <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                  <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
-                                    
-                                  </div>
-                                  <div id="logo-container" class="position-absolute">
-                                    <img id="logo" src="icons/cricket.png" alt="Logo" style="height: 25px; width: 25px;">
-                                  </div>
-                                </div>
-                              </div>
-                            
-                              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                              <script>
-                                $(document).ready(function() {
-                                  var progressBarWidth = $('#progress-bar').width();
-                                  var logoWidth = $('#logo-container').width();
-                            
-                                  var positionLeft = progressBarWidth - logoWidth + 3;
-                            
-                                  $('#logo-container').css('left', positionLeft + 'px');
-                            
-                                  $(window).resize(function() {
-                                    progressBarWidth = $('#progress-bar').width();
-                                    positionLeft = progressBarWidth - logoWidth + 3;
-                            
-                                    $('#logo-container').css('left', positionLeft + 'px');
-                                  });
-                                });
-                              </script>
-                            </td>
-                              <td class="text-start"></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td><div class="text-center">
-                              <div class="row g-0 align-items-center">
-                                <div class="col-3">
-                                 <img src="icons/soccer-player.png" alt="">
-                                </div>
-                                <div class="col-6">
-                                  Mark
-                                </div>
-                              </div>
-                              </div></td>
-                            <td>Otto</td>
-                            <td>
-                              <div class="position-relative">
-                                <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                  <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
                                     
                                   </div>
                                   <div id="logo-container" class="position-absolute">
@@ -701,7 +702,7 @@ leagueStanding.addEventListener("click", () => {
                         <td>
                           <div class="position-relative">
                             <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
+                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 59%; position: relative;">75%
                                 
                               </div>
                               <div id="logo-container" class="position-absolute">
@@ -969,7 +970,7 @@ leagueStanding.addEventListener("click", () => {
                         <td>
                           <div class="position-relative">
                             <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
+                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 29%; position: relative;">75%
                                 
                               </div>
                               <div id="logo-container" class="position-absolute">
@@ -1061,7 +1062,7 @@ leagueStanding.addEventListener("click", () => {
                         <td>
                           <div class="position-relative">
                             <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
+                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 69%; position: relative;">75%
                                 
                               </div>
                               <div id="logo-container" class="position-absolute">
@@ -1375,7 +1376,7 @@ leagueStanding.addEventListener("click", () => {
                         <td>
                           <div class="position-relative">
                             <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
+                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 69%; position: relative;">75%
                                 
                               </div>
                               <div id="logo-container" class="position-absolute">
@@ -1467,7 +1468,7 @@ leagueStanding.addEventListener("click", () => {
                         <td>
                           <div class="position-relative">
                             <div class="progress align-items-center" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 0%; position: relative;">75%
+                              <div id="progress-bar" class="progress-bar bg-danger" style="width: 69%; position: relative;">75%
                                 
                               </div>
                               <div id="logo-container" class="position-absolute">
@@ -1508,6 +1509,7 @@ leagueStanding.addEventListener("click", () => {
 
 
       <!-- main -->
+     
       <script>
         // Add an event listener to the capture button
 document.querySelector('#screenshot-btn').addEventListener('click', function() {
@@ -1538,10 +1540,33 @@ document.querySelector('#screenshot-btn').addEventListener('click', function() {
 });
 
         </script>
+      
+      <script>
+        $(document).ready(function() {
+          $('td').each(function() {
+            var progressBarWidth = $(this).find('#progress-bar').width();
+            var logoWidth = $(this).find('#logo-container').width();
+            var positionLeft = progressBarWidth - logoWidth + 3;
+            $(this).find('#logo-container').css('left', positionLeft + 'px');
+          });
+          $(window).resize(function() {
+            $('td').each(function() {
+              var progressBarWidth = $(this).find('#progress-bar').width();
+              var logoWidth = $(this).find('#logo-container').width();
+              var positionLeft = progressBarWidth - logoWidth + 3;
+              $(this).find('#logo-container').css('left', positionLeft + 'px');
+            });
+          });
+        });
+      </script>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+
 
 <!-- js script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
